@@ -1,2 +1,2 @@
-# image-based_placement_detection
+# Surface-Placement-Optimization-with-Tessellation
 Detect optimal package placement position using computer vision
