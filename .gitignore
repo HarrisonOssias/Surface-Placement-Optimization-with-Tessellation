@@ -205,3 +205,104 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ======================================================================
+# PROJECT SPECIFIC - SPO-T (Surface Placement Optimization)
+# ======================================================================
+
+# RGB-D Dataset (Large - typically 10GB+)
+rgbd-scenes-v2/
+rgbd-scenes-v2_pc/
+rgbd-scenes-v2_imgs/
+rgbd-dataset/
+**/rgbd-scenes*/
+
+# YOLO Training Data & Models
+runs/
+# Keep training results but ignore intermediate checkpoints
+!runs/detect/*/weights/best.pt
+runs/detect/*/weights/*.pt
+yolov8*.pt
+yolo11*.pt
+*.weights
+
+# Training outputs
+train/
+val/
+test/
+dataset/
+datasets/
+yolo_dataset/
+*.yaml.cache
+
+# Ultralytics cache
+ultralytics_cache/
+
+# Model checkpoints and large files (anything over 100MB)
+*.h5
+*.keras
+*.onnx
+*.tflite
+*.pb
+*.ckpt
+*.pth
+*.safetensors
+
+# Logged data and outputs
+desk_space_data.csv
+desk_space_*.csv
+*.csv
+!requirements.txt
+!*_guide.csv
+
+# Saved detection images
+detections/
+saved_images/
+output/
+outputs/
+detection_*.jpg
+detection_*.png
+box_detection_*.jpg
+box_detection_*.png
+
+# Video recordings (if any)
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Kinect raw data dumps
+kinect_data/
+*.kinect
+*.depth
+*.raw
+
+# Large numpy arrays
+*.npy
+*.npz
+
+# Temporary processing files
+temp/
+tmp/
+*.tmp
+
+# IDE specific (in case not covered above)
+.vscode/
+.idea/
+*.code-workspace
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Compressed archives (often used for datasets)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+!requirements.txt.gz  # Keep if you compress requirements
